@@ -467,7 +467,7 @@ p {
 }
 
 .onhover:hover {
-    transform: translate(-5px);
+    transform: translate(-2px, -2px);
 }
 
 .num {
@@ -522,4 +522,210 @@ p {
     .botm-1 {
         border-bottom: 2px solid white;
     }
+}
+
+.date {
+    font-family: var(--font-work);
+    font-size: 10px;
+    line-height: var(--line-height-20);
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--tertiary-color);
+}
+
+.card-head {
+    font-family: var(--font-poppins);
+    font-size: var(--text-size-20);
+    font-weight: 500;
+    line-height: var(--line-height-30);
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--secondary-color);
+    margin-top: 15px;
+}
+
+.card-btn {
+    padding: 13px 22px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: var(--font-work);
+    font-size: var(--text-size-20);
+    line-height: var(--line-height-24);
+}
+
+.card-btn:hover {
+    background-color: #fff;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.stlier-card {
+    /* border: 2px solid rgba(128, 128, 128, 0.436); */
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.stlier-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.bg-color {
+    background-color: #FF5300;
+}
+
+.padding {
+    padding: 35px 51px;
+}
+
+.lets {
+    font-family: var(--font-poppins);
+    font-size: var(--text-size-40);
+    font-weight: 600;
+    line-height: var(--line-height-58);
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.sub {
+    padding: 15px 39px;
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-family: var(--font-poppins);
+    font-size: var(--text-size-20);
+    font-weight: 500;
+    line-height: var(--line-height-30);
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sub:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+input[type="email"]::placeholder {
+
+    font-family: var(--font-poppins);
+    font-size: var(--text-size-16);
+    font-weight: 400;
+    line-height: var(--line-height-24);
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--tertiary-color);
+}
+
+input[type="email"] {
+    padding: 15px 39px;
+    border: none;
+}
+
+.btn-scn {
+    padding: 20px 10px !important;
+}
+
+.mt-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.footer-heading {
+    font-family: var(--font-work);
+    font-size: var(--text-size-40);
+    line-height: var(--line-height-45);
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.footer-heading span {
+    color: #fff;
+}
+
+.location {
+    color: var(--primary-color);
+    font-family: var(--font-poppins);
+    font-size: var(--text-size-25);
+    font-weight: 600;
+    line-height: var(--line-height-37);
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer-txt {
+    font-family: var(--font-poppins);
+    font-size: var(--text-size-20);
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box:hover {
+    transform: translate(-2px, -2px);
+}
+
+.img-box:hover span svg path {
+    fill: var(--primary-color);
+    box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(0, 98, 90, 0.3), 15px 15px rgba(0, 98, 90, 0.2), 20px 20px rgba(0, 98, 90, 0.1), 25px 25px rgba(0, 98, 90, 0.05);
+}
+
+.linee {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.footer {
+    font-family: var(--font-work);
+    font-size: var(--text-size-16);
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.gap-30 {
+    gap: 70px;
+}
+
+body::-webkit-scrollbar {
+    width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(128, 128, 128, 0.548);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    border: 3px solid var(--primary-color);
 }
