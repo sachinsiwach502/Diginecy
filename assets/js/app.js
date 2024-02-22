@@ -12,8 +12,7 @@ $('.slick-slider').slick({
     slidesToShow: 3,
     nextArrow: ".next",
     prevArrow: ".prev",
-    autoplay: true,
-    autoplaySpeed: 2000,
+
     slidesToScroll: 1,
     responsive: [
         {
@@ -30,7 +29,8 @@ $('.slick-slider').slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-
+                // autoplay: true,
+                // autoplaySpeed: 2000,
 
             }
         },
@@ -45,4 +45,29 @@ $('.slick-slider').slick({
         // settings: "unslick"
         // instead of a settings object
     ]
+});
+
+let scroll_to_top = document.querySelector(".scroll");
+document.addEventListener("scroll", () => {
+    let scrollpnt = 200;
+    if (window.scrollY > scrollpnt) {
+        scroll_to_top.classList.add("svg-box");
+    } else {
+        scroll_to_top.classList.remove("svg-box");
+    }
+});
+
+
+scroll_to_top.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+});
+
+gsap.from(".scroll", {
+    y: 15,
+    duration: 1,
+    repeat: -1,
+    yoyo: true,
 });
